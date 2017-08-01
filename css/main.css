@@ -1,0 +1,310 @@
+/*********************
+Universal Styles
+*********************/
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	background-color: rgba(235,224,132,0.6);
+}
+
+html {
+	height: 100%;
+}
+
+h1 {
+	font-weight: 700;
+	padding-top: 10px;
+}
+
+h2 {
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+
+h3 {
+	font-weight: 700;
+}
+
+h4 {
+	font-weight: 700;
+	margin-top: 20px;
+}
+
+footer {
+	background-color: #364d39;
+	padding: 10px;
+	color: #EBE084;
+	text-align: center;
+}
+
+footer p {
+	max-width: 75%;
+	margin: 0 auto;
+}
+
+footer ul {
+	list-style: none;
+	padding: 0;
+}
+
+footer li {
+	text-transform: uppercase;
+	display: inline-block;
+	padding-right: 10px;
+	
+}
+
+footer a {
+	color: #ebe084;
+}
+
+footer a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.wrapper {
+	min-height: calc(100vh - 74px);
+}
+
+.main-head {
+	padding-top: 70px;
+}
+/** Navigation Styles **/
+
+.navbar-inverse {
+	background: #364d39;
+	border-color: #1d291f;
+}
+
+.navbar-inverse .navbar-brand {
+	color: #EBE084;
+}
+
+.navbar-brand {
+	font-family: 'Rancho', cursive;
+	font-size: 2em;
+}
+
+.navbar-inverse .navbar-nav li a {
+	color: #EBE084;
+	text-transform: uppercase;
+}
+
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>a:focus, 
+.navbar-inverse .navbar-nav>a:hover {
+	background-color: #1d291f;
+}
+
+.navbar-inverse .navbar-toggle:focus, 
+.navbar-inverse .navbar-toggle:hover {
+    background-color: #1d291f;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: rgba(0,0,0,0);
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+	background-color: #EBE084;
+}
+
+.dropdown-menu {
+	background-color: #1d291f;
+	font-size: 16px;
+}
+
+.dropdown-menu>li>a:hover {
+	background-color: #ebe084;
+	color: #364d39;
+}
+
+/*********************
+Home Page Class Styles 
+*********************/
+
+.home {
+	background-image: url("../photos/JFM_trail.JPG");
+	background-color: #1d291f;
+	background-size: cover;
+	background-position: center;
+}
+
+.home .content {
+	text-align: center;
+	padding-top: 25%;
+	color: #EBE084;
+	text-shadow: 0px 4px 10px rgba(0,0,0,1);
+}
+
+.home h1 {
+	font-weight: 700;
+	font-size: 4em;
+	/*background-color: rgba(54,77,57,0.3);*/
+	border-radius: 5px;
+}
+
+.home h3 {
+	font-weight: 700;
+	/*background-color: rgba(54,77,57,0.3);*/
+}
+
+.btn-default {
+	background-color: #EBE084;
+	color:#364d39;
+	font-weight: 700;
+}
+
+/**************************
+Trails Pages Styles
+***************************/
+
+.breadcrumb {
+	margin-top: 70px;
+	margin-bottom: 10px;
+	background-color: rgba(235,224,132,0.1);
+}
+.breadcrumb>li>a {
+	text-transform: none;
+}
+
+/*Carousel Styles */
+
+.carousel-caption {
+	text-shadow: 1px 1px 5px rgba(0,0,0,1)
+}
+
+.carousel-caption p {
+	background-color: rgba(50,50,50,0.5);
+	border-radius: 5%;
+	padding: 1%;
+}
+
+.carousel-inner img {
+	border: 3px solid #000;
+}
+
+/* Map Styles */
+
+
+ .map {
+    width: 100%;
+    height: 500px;
+    background-color: grey;
+	border: 2px solid #000;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/* Description Styles */
+
+.trails a {
+	color: #364d39;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.activities {
+	padding-left: 0;
+	margin-bottom: 10px;
+	line-height: 1.5;
+}
+
+
+.activities li {
+	list-style: none;
+	font-weight: bold;
+
+}
+
+/**********************
+ Resource Page Styles 
+ **********************/
+
+.icon {
+	display: block;
+	padding-top: 15px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.resources .fa {
+	font-size: 42px;
+	color: #000;
+}
+
+.trek {
+	width: 12%;
+	height: 12%;
+}
+
+
+#boot {
+	margin-top: -15px;
+}
+
+.resources h2 {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.resources hr {
+	border-top: 1px solid #364d39;
+	
+}
+
+.links a {
+	color: #364d39;
+	font-weight: 700;
+}
+
+
+/*******************
+Media queries
+********************/
+
+
+@media screen and (min-width: 769px) {
+	footer {
+		margin-top: 10px;
+	}
+
+	footer p {
+		float: left;
+		margin-left: 1em;
+	}
+	
+	footer ul {
+		float: right;
+	}
+	
+	.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	
+	.wrapper {
+		min-height: calc(100vh - 52px);
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.trek {
+		width: 8%;
+		height: 8%;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+		color: #EBE084;
+	}
+
+	a.right.carousel-control,
+	a.left.carousel-control	{
+		color: #fff;
+	}
+}
